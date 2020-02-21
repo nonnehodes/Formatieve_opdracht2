@@ -30,5 +30,5 @@ print('Het gemiddelde is: {0:.2f}'.format(float(sum / aantal)))
 
 '''
 Bron 1: https://www.w3schools.com/python/python_mongodb_find.asp
-
+Bron 2: https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
 '''
