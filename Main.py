@@ -15,8 +15,18 @@ print('\n Opdracht 2:')
 producten_2 = products_database.find({ "name": { "$gt": "R" } }, {'name':1})
 print('Naam v/h eerste product met een r: {}'.format(producten_2[0]['name']))
 
-
 #   Opdracht 3
+print('\n Opdracht 3:')
+prijs_ophalen = products_database.find({},{'price':1})
+sum = 0
+aantal = 0
+for i in prijs_ophalen:
+    try:
+        sum += float(i['price']['selling_price'])
+        aantal += 1
+    except:
+        continue
+print('Het gemiddelde is: {}'.format(sum / aantal))
 
 '''
 Bron 1: https://www.w3schools.com/python/python_mongodb_find.asp
