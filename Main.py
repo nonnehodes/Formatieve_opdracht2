@@ -26,7 +26,7 @@ for i in prijs_ophalen:
         aantal += 1
     except:
         continue
-print('Het gemiddelde is: {}'.format(sum / aantal))
+print('Het gemiddelde is: {0:.2f}'.format(float(sum / aantal)))
 
 '''
 Bron 1: https://www.w3schools.com/python/python_mongodb_find.asp
