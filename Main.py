@@ -1,8 +1,3 @@
-'''
-Bron 1: https://www.w3schools.com/python/python_mongodb_find.asp
-
-'''
-
 import pymongo
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -14,3 +9,9 @@ colom = database["products"]
 myquery = { "name": { "$gt": "R" } }
 mydoc = colom.find(myquery)
 
+
+
+'''
+Bron 1: https://www.w3schools.com/python/python_mongodb_find.asp
+
+'''
