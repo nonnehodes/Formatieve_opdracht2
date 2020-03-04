@@ -40,7 +40,9 @@ def insert_into_postgres(values):
             print("Failed to insert record into mobile table", error)
 
 
-#get_products_mongo()
+a_ = input("Staat de data al in je postgresql?(J/N):")
+if a_ == 'N' or a_ == 'n':
+    get_products_mongo()
 
 
 def opdracht_2():
@@ -59,7 +61,7 @@ def opdracht_2():
         for row in price_records:
             total += row[0]
             b += 1
-        print(total/b)
+        print("Gemiddelde prijs is"+str(total/b))
 
 
     except (Exception, psycopg2.Error) as error:
